@@ -1,6 +1,8 @@
 package ru.netology.radio;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 public class RadioTest {
     @Test
     public void receivesStation1() {
@@ -75,7 +77,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation1() {
+    public void nextStation1() {
         Radio radio = new Radio();
         radio.setCurrentStation(5);
         radio.next();
@@ -86,7 +88,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation2() {
+    public void nextStation2() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
         radio.next();
@@ -97,7 +99,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation3() {
+    public void nextStation3() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.next();
@@ -107,7 +109,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation4() {
+    public void nextStation4() {
         Radio radio = new Radio();
         radio.setCurrentStation(1);
         radio.next();
@@ -117,7 +119,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation5() {
+    public void nextStation5() {
         Radio radio = new Radio();
         radio.setCurrentStation(8);
         radio.next();
@@ -127,7 +129,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation6() {
+    public void prevStation1() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.prev();
@@ -137,7 +139,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation7() {
+    public void prevStation2() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
         radio.prev();
@@ -147,7 +149,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation8() {
+    public void prevStation3() {
         Radio radio = new Radio();
         radio.setCurrentStation(1);
         radio.prev();
@@ -157,7 +159,7 @@ public class RadioTest {
     }
 
     @Test
-    public void switchingStation9() {
+    public void prevStation4() {
         Radio radio = new Radio();
         radio.setCurrentStation(8);
         radio.prev();
@@ -308,6 +310,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void switchingVolume9() {
         Radio radio = new Radio();
